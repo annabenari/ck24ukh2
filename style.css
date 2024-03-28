@@ -1,0 +1,14 @@
+.section-background{
+    background-color: #333333;
+    padding: 2px;
+    margin-bottom:8px ;
+}
+
+
+.col-sm-4{
+    color:#9d9d9d !important; 
+}
+
+.jumbotron{
+    padding: 0 auto;
+}
