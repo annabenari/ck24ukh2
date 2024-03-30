@@ -9,60 +9,247 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
 
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
-    </style>
 </head>
+
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Revision Guide</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="./LessonOne.html">Lesson One: HTML</a></li>
+                <li class="active"><a href="./LessonTwo.html">Lesson Two: CSS</a></li>
+                <li class="active"><a href="./LessonThree.html">Lesson Three: BootStrap</a></li>
+                <li class="active"><a href="./LessonFour.html">Lesson Four: JavaScript - Part One</a></li>
+                <li class="active"><a href="./LessonFive.html">Lesson Five: JavaScript - Part Two</a></li>
+                <li class="active"><a href="./LessonSix.html">Lesson Six: UX/UI</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
 
 <body>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Revision Guide</a>
+    <br>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-3 well">
+                <div class="well">
+                    <H4>Lesson Two: CSS</H4>
+
+                </div>
+                <div>
+                </div>
+                <div class="alert alert-success fade in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                    <p><strong>What are you looking for?</strong></p>
+                </div>
+                <p><a href="#partOne">How does CSS work?</a></p>
+                <p><a href="#partTwo">How to write CSS</a></p>
+                <p><a href="#partThree">Try it yourself</a></p>
+                <p><a href="#partFour"></a></p>
+                <p><a href="#partFive"></a></p>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+            <div class="col-sm-9">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="panel panel-default text-left">
+                            <div class="panel-body">
+                                <h1>Revision Guide</h1>
+                                <h4>Wed Dev Fundamentals</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="partOne">
+                    <div class="col-sm-4">
+                        <div class="well">
+
+                            <h4>How does CSS work?</h4>
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+
+                            <p>
+                                CSS controls various elements of a webpage.
+                            </p>
+                            <p>
+                                Before we learn more, remember to create a CSS file and if there is already one, then
+                                remember to link it to the HTML. This is done by:
+                                <code>&lt;link href="style.css"&gt;</code>
+                            </p>
+                            <p>
+                                It encompasses aspects such as:
+                            <ol>
+                                <li>Typography, colors, and fonts</li>
+                                <li>Positioning, display, and spacing</li>
+                                <li>Animation and user interaction</li>
+                                <li>Responsiveness</li>
+                            </ol>
+                            </p>
+                            <p>
+                                <strong>Here is an example of a webpage without CSS:</strong>
+                            </p>
+                            <img src="./withoutCSS.png" alt="Webpage without CSS">
+                            <p>
+                                <strong>Here is an example of the same webpage with CSS:</strong>
+                            </p>
+                            <img src="./withCSS.png" alt="Webpage with CSS">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="partTwo">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h4>How to write CSS</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <code>body { <br>
+                                color: red;<br>
+                                font-family: Arial, sans-serif;<br>
+                                background-color: #f0f0f0;<br>
+                                margin: 0;<br>
+                                padding: 20px;<br>
+                            }</code>
+                            <p>This would make all of the text red in the WHOLE webpage. It also sets the font family to
+                                Arial or sans-serif, background color to a light gray (#f0f0f0), and adds some margin
+                                and padding to the body.</p>
+
+                            <code>p { <br>
+                                font-size: 50px;<br>
+                                line-height: 1.5;<br>
+                                text-align: center;<br>
+                                border: 2px solid #000;<br>
+                                padding: 10px;<br>
+                            }</code>
+                            <p>This would make all the text within <code>&lt;p&gt;</code> elements have a font size of
+                                50 pixels. It also sets the line height to 1.5 times the font size, aligns text to the
+                                center, adds a solid black border of 2 pixels around paragraphs, and adds padding inside
+                                the border.</p>
+
+                            <p>This can be applied to all elements you want to target, such as <code>&lt;h1&gt;</code>,
+                                <code>&lt;h2&gt;</code>, <code>&lt;li&gt;</code>, etc.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="partThree">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h4>Try it yourself!</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <p>Create an account with: <a href="https://codepen.io/">CodePen</a></p>
+                            <p>
+                                <strong>Exercise 2.0 - Setup</strong><br>
+                                * Create an HTML file and a CSS file, then link them together.
+                            </p>
+                            <p>
+                                <strong>Exercise 2.1</strong><br>
+                                * Target an element and change its color.
+                            </p>
+                            <p>
+                                <strong>Exercise 2.2</strong><br>
+                                * Pick a heading tag and change its font size, make it bold, and underlined.
+                            </p>
+                            <p>
+                                <strong>Exercise 2.3</strong><br>
+                                * Import a font from Google Fonts, link it to your HTML page, and try to use it for one
+                                of your lists (ordered/unordered).
+                            </p>
+                            <p><a href="https://codepen.io/annabenari/pen/eYoGoem">Answer</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="partFour">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h4>Structre of a HTML page:
+                                A HTML page outline is structured in a particular way</h4>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <code>!DOCTYPE html</code>
+                            <p>The DOCTYPE declaration informs the browser about the type and version of HTML we're
+                                using</p>
+                            <code>html</code>
+                            <p>All HTML we wish for the browser to
+                                pick up must be within the <html>
+                                tags</p>
+                            <code>head</code>
+                            <p>The head section contains meta-information, such as styles, scripts, and other resources
+                                <br>Inside the head, we define fonts, styles, and JavaScript
+                            </p>
+                            <code>body</code>
+                            <p> The body section holds the visible content of the webpage
+                                Here, we place our actual content, such as text, images, and other elements</p>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="partFive">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h4>Homework</h4>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <p>
+                                <a href="https://drive.google.com/drive/folders/1M9xt0G7A158d3FBdVuJGBmYCiEk2Jqm1">
+                                    Link to Homework Guide
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://drive.google.com/drive/folders/1V57_FLYLqFairV0fpbgpXykrXS0hB0Sz">
+                                    Starter Code
+                                </a>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
-    </nav>
 
 
-    <div class="container text-center">
-        <h1>Revision Guide</h1>
-        <h4>Wed Dev Fundamentals</h4>
-    </div>
 
-
-    <div class="container-fluid bg-4 text-center">
-        <h5>Lesson Two</h5><br>
-    </div><br>
-
-
-    <footer class="container-fluid text-center">
-        <a href="https://codefirstgirls.com/">Code First Girls</a>
-    </footer>
+        <footer class="container-fluid text-center">
+            <a href="https://codefirstgirls.com/">Code First Girls</a>
+        </footer>
 
 </body>
 

@@ -16,3 +16,13 @@
 a{
     color:#9d9d9d !important;
 }
+
+.htmlExample{
+    width: 250px;
+    height: 310px;
+}
+
+img{
+    height: 70%;
+    width: 70%;
+}

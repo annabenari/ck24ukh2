@@ -9,60 +9,235 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
 
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
-    </style>
 </head>
+
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Revision Guide</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="./LessonOne.html">Lesson One: HTML</a></li>
+                <li class="active"><a href="./LessonTwo.html">Lesson Two: CSS</a></li>
+                <li class="active"><a href="./LessonThree.html">Lesson Three: BootStrap</a></li>
+                <li class="active"><a href="./LessonFour.html">Lesson Four: JavaScript - Part One</a></li>
+                <li class="active"><a href="./LessonFive.html">Lesson Five: JavaScript - Part Two</a></li>
+                <li class="active"><a href="./LessonSix.html">Lesson Six: UX/UI</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
 
 <body>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Revision Guide</a>
+    <br>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-3 well">
+                <div class="well">
+                    <H4>Lesson One: HTML</H4>
+
+                </div>
+                <div>
+                </div>
+                <div class="alert alert-success fade in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                    <p><strong>What are you looking for?</strong></p>
+                </div>
+                <p><a href="#partOne">Ever wondered how a website comes to life?</a></p>
+                <p><a href="#partTwo">Elements: The building blocks of HTML</a></p>
+                <p><a href="#partThree">Try it yourself!</a></p>
+                <p><a href="#partFour">Structre of a HTML page: A HTML page outline is structured in a particular
+                        way</a></p>
+                <p><a href="#partFive">Homework</a></p>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+            <div class="col-sm-9">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="panel panel-default text-left">
+                            <div class="panel-body">
+                                <h1>Revision Guide</h1>
+                                <h4>Wed Dev Fundamentals</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="partOne">
+                    <div class="col-sm-4">
+                        <div class="well">
+
+                            <h4>Ever wondered how a website comes to life?</h4>
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+
+                            <p>It all begins with HTML (HyperText Markup Language). HTML serves as the backbone or
+                                structure of
+                                the
+                                webpage,
+                                much like the skeletal framework of a building.</p>
+                            <p>Next, we introduce CSS (Cascading Style Sheets). CSS is responsible for the visual
+                                presentation
+                                and
+                                styling
+                                of
+                                the webpage. It's like the paint, wallpaper, and interior design that give the site its
+                                aesthetic
+                                appeal
+                                and
+                                user experience.</p>
+                            <p>Finally, we incorporate JavaScript. JavaScript provides the website with interactivity
+                                and
+                                functionality.
+                                It's
+                                the dynamic element that enables features like animations, form validation, and
+                                interactive
+                                content.
+                            </p>
+                            <p>So, to summarize, a website is crafted by combining HTML for structure, CSS for style,
+                                and
+                                JavaScript
+                                for
+                                functionality, resulting in a cohesive and engaging online experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="partTwo">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h4>Elements: The building blocks of HTML</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+
+                            <p>HTML allows you to structure your content using various heading tags:</p>
+                            <code><h1>Header 1: h1</h1></code>
+                            <code><h2>Header 2: h2</h2></code>
+                            <code><h3>Header 3: h3</h3></code>
+                            <code><h4>Header 4: h4</h4></code>
+                            <code><h5>Header 5: h5</h5></code>
+                            <code><h6>Header 6: h6</h6></code>
+                            <p>Remember to enclose the opening tag in "&lt;&gt;" and add a "/" before the closing tag.
+                            </p>
+                            <p>The <code>p</code> tag is used for paragraphs.</p>
+                            <p><code><small>Small</small></code> makes text smaller, while
+                                <code><strong>strong</strong></code> makes it bold.
+                            </p>
+                            <p>Lists can be created using:</p>
+                            <ul>
+                                <li><code>ul</code> and <code>li</code> for an unordered list:</li>
+                                <li>As seen here, it produces a list with bullet points.</li>
+                            </ul>
+                            <ol>
+                                <li><code>ol</code> and <code>li</code> for an ordered list:</li>
+                                <li>As shown, it creates a list with numbered items in sequence.</li>
+                            </ol>
+                            <p>To add an image, use the <code>img</code> tag with the <code>src</code> attribute to
+                                specify the image URL:</p>
+                            <code><img src="image.jpg" alt="Description of the image"></code>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="partThree">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h4>Try it yourself!</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <p>Create a account with : <a href="https://codepen.io/">Code pen</a></p>
+                            <p>Try to recreate the image below (using your information)</p>
+                            <img class="htmlExample" src="./htmlExample.png">
+                            <p><a href="https://codepen.io/annabenari/pen/ExJwJKj">Completed Code</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="partFour">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h4>Structre of a HTML page:
+                                A HTML page outline is structured in a particular way</h4>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <code>!DOCTYPE html</code>
+                            <p>The DOCTYPE declaration informs the browser about the type and version of HTML we're
+                                using</p>
+                            <code>html</code>
+                            <p>All HTML we wish for the browser to
+                                pick up must be within the <html>
+                                tags</p>
+                            <code>head</code>
+                            <p>The head section contains meta-information, such as styles, scripts, and other resources
+                                <br>Inside the head, we define fonts, styles, and JavaScript
+                            </p>
+                            <code>body</code>
+                            <p> The body section holds the visible content of the webpage
+                                Here, we place our actual content, such as text, images, and other elements</p>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="partFive">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h4>Homework</h4>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <p>
+                                <a href="https://drive.google.com/drive/folders/1M9xt0G7A158d3FBdVuJGBmYCiEk2Jqm1">
+                                    Link to Homework Guide
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://drive.google.com/drive/folders/1V57_FLYLqFairV0fpbgpXykrXS0hB0Sz">
+                                    Starter Code
+                                </a>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
-    </nav>
 
 
-    <div class="container text-center">
-        <h1>Revision Guide</h1>
-        <h4>Wed Dev Fundamentals</h4>
-    </div>
 
-
-    <div class="container-fluid bg-4 text-center">
-        <h5>Lesson One</h5><br>
-    </div><br>
-
-
-    <footer class="container-fluid text-center">
-        <a href="https://codefirstgirls.com/">Code First Girls</a>
-    </footer>
+        <footer class="container-fluid text-center">
+            <a href="https://codefirstgirls.com/">Code First Girls</a>
+        </footer>
 
 </body>
 
