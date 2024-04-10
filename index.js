@@ -1,3 +1,5 @@
+const { default: Feedback } = require("react-bootstrap/esm/Feedback");
+
 function changeMode() {
   let body = document.body;
   if (body.classList.contains("light-mode")) {
@@ -27,3 +29,18 @@ document
 
 // Initialize color mode when the page loads
 initializeMode();
+
+function submitFeedback() {
+  // Get the user input from the textarea
+  let userInput = document.getElementById("user-input").value;
+
+  // Create a new paragraph element to display the feedback
+  let feedback = document.createElement("p");
+  feedback.textContent = userInput;
+
+  // Append the feedback paragraph to the feedback list
+  document.getElementById("user-feedback").appendChild(feedback);
+
+  // Clear the textarea after submitting feedback
+  document.getElementById("user-input").value = "";
+}
