@@ -1,5 +1,3 @@
-const { default: Feedback } = require("react-bootstrap/esm/Feedback");
-
 function changeMode() {
   let body = document.body;
   if (body.classList.contains("light-mode")) {
@@ -31,16 +29,42 @@ document
 initializeMode();
 
 function submitFeedback() {
-  // Get the user input from the textarea
   let userInput = document.getElementById("user-input").value;
-
-  // Create a new paragraph element to display the feedback
   let feedback = document.createElement("p");
   feedback.textContent = userInput;
-
-  // Append the feedback paragraph to the feedback list
   document.getElementById("user-feedback").appendChild(feedback);
-
-  // Clear the textarea after submitting feedback
   document.getElementById("user-input").value = "";
+}
+
+document
+  .getElementById("submitRevisionHeaderId")
+  .addEventListener("click", submitRevisionHeader);
+function submitRevisionHeader() {
+  let userDiv = document.createElement("div");
+  userDiv.classList.add("col-sm-4");
+  let innerDiv = document.createElement("div");
+  innerDiv.classList.add("well");
+
+  let userHeader = document.getElementById("user-header").value;
+  let header = document.createElement("h3");
+  header.textContent = userHeader;
+  innerDiv.appendChild(header);
+  userDiv.appendChild(innerDiv);
+
+  document.getElementById("partSeven").appendChild(userDiv);
+}
+
+function submitRevision() {
+  let userDiv = document.createElement("div");
+  userDiv.classList.add("col-sm-8");
+  let innerDiv = document.createElement("div");
+  innerDiv.classList.add("well");
+
+  let userRevision = document.getElementById("user-revision").value;
+  let revision = document.createElement("p");
+  revision.textContent = userRevision;
+  innerDiv.appendChild(revision);
+  userDiv.appendChild(innerDiv);
+
+  document.getElementById("partSeven").appendChild(userDiv);
 }
